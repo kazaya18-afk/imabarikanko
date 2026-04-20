@@ -65,14 +65,24 @@ text-align: center;
 padding: 2rem;
 }
 
+.hero-rabbit {
+font-size: clamp(5rem, 15vw, 10rem);
+line-height: 1;
+margin-bottom: 1rem;
+opacity: 0;
+animation: fadeUp 0.8s 0.1s forwards;
+filter: drop-shadow(0 8px 20px rgba(42,101,128,0.2));
+}
+
 .hero-sub {
-font-family: ‘Bebas Neue’, sans-serif;
-font-size: clamp(0.9rem, 2vw, 1.1rem);
-letter-spacing: 0.5em;
+font-family: ‘Shippori Mincho’, serif;
+font-size: clamp(1.5rem, 4vw, 2.5rem);
+letter-spacing: 0.2em;
 color: var(–sea);
 margin-bottom: 1rem;
 opacity: 0;
 animation: fadeUp 0.8s 0.3s forwards;
+font-weight: 700;
 }
 
 .hero-title {
@@ -133,14 +143,14 @@ padding: 1rem 2rem;
 display: flex;
 justify-content: space-between;
 align-items: center;
-background: rgba(26,16,8,0.85);
+background: rgba(255,255,255,0.85);
 backdrop-filter: blur(10px);
-border-bottom: 1px solid rgba(201,147,58,0.2);
+border-bottom: 1px solid rgba(42,101,128,0.2);
 }
 
 .nav-logo {
 font-family: ‘Shippori Mincho’, serif;
-color: var(–gold);
+color: var(–sea);
 font-size: 1.1rem;
 font-weight: 700;
 letter-spacing: 0.1em;
@@ -154,14 +164,14 @@ list-style: none;
 
 .nav-links a {
 font-family: ‘Noto Serif JP’, serif;
-color: var(–mist);
+color: var(–sea);
 text-decoration: none;
 font-size: 0.85rem;
 letter-spacing: 0.1em;
 transition: color 0.3s;
 }
 
-.nav-links a:hover { color: var(–gold); }
+.nav-links a:hover { color: var(–orange); }
 
 /* ===== SECTION BASE ===== */
 section {
@@ -483,6 +493,7 @@ transform: none;
     <path d="M0,100 C400,40 800,120 1200,80 C1320,65 1400,90 1440,100 L1440,140 L0,140 Z" fill="#f5efe3" opacity="0.6"/>
   </svg>
   <div class="hero-content">
+    <div class="hero-rabbit">🐰</div>
     <p class="hero-sub">しいちゃんの今治観光</p>
     <h1 class="hero-title">今<span>治</span><br>観光案内</h1>
     <p class="hero-desc">
@@ -693,3 +704,4 @@ transform: none;
 
 </body>
 </html>
+
